@@ -212,4 +212,4 @@ To test the API endpoints, use the provided [Postman Collection](https://raw.git
 ![image](https://github.com/user-attachments/assets/9fcd2685-8692-4d31-adcb-c593ec10545d)
 
 ### User
-![image](https://github.com/sandesh300/Task-Management-System/assets/92014891/204a45c1-f436-4ac5-a6f4-3573b2121a5a)
+![image](https://github.com/user-attachments/assets/c45423b4-6ba2-4e6b-af19-34eef0813ca5)
