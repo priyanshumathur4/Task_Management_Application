@@ -203,7 +203,7 @@ To test the API endpoints, use the provided [Postman Collection](https://raw.git
 
 ```
 ---------------------------------------------------------------------------------------
-## Postman Snapshot
+## Postman Snapshot -
 ### POST auth/login with token
 ![Postman Snapshot](https://github.com/user-attachments/assets/56ac41df-a900-4151-ba97-4aeed65a2a08)
 
