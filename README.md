@@ -206,4 +206,4 @@ To test the API endpoints, use the provided [Postman Collection](https://raw.git
 ---------------------------------------------------------------------------------------
 ## Postman Snapshot
 ### POST auth/login with token 
-![Postman Snapshot](https://raw.githubusercontent.com/your-username/your-repo/main/images/Screenshot%20(17).png)
+![Postman Snapshot](./screenshot17.png)
