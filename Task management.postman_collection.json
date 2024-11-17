@@ -1,0 +1,238 @@
+{
+	"info": {
+		"_postman_id": "b7a5688d-ef27-4003-ae11-175900fb62d6",
+		"name": "Task management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19519715",
+		"_collection_link": "https://lively-shadow-449944.postman.co/workspace/My-Workspace~35081ccd-c914-4e76-8f22-17b41916f94e/collection/19519715-b7a5688d-ef27-4003-ae11-175900fb62d6?action=share&source=collection_link&creator=19519715"
+	},
+	"item": [
+		{
+			"name": "auth/register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n           \"username\": \"gauravJwt10\",\n           \"password\": \"12345678\",\n           \"email\": \"gauravJwt10@example.com\"\n         }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "auth/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n           \"username\": \"gauravJwt10\",\n           \"password\": \"12345678\"\n         }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				},
+				"description": "Generated from cURL: curl -X POST http://localhost:8080/api/auth/login \\\n     -H \"Content-Type: application/json\" \\\n     -d '{\n           \"username\": \"newuser\",\n           \"password\": \"securepassword\"\n         }'"
+			},
+			"response": []
+		},
+		{
+			"name": "create task",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJnYXVyYXZKd3QxMCIsImlhdCI6MTczMTg2MDc0MCwiZXhwIjoxNzMxODk2NzQwfQ.Fmae9ohAsofm_1h9hPDRgSglTEltVc8ilOJ511dxK7w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer <your_jwt_token>"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"task\": \"Finish Project Documentation\",\n  \"details\": \"Complete the detailed documentation for the API endpoints.\",\n  \"completed\": false,\n  \"taskCreatedAt\": \"2024-11-17\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/v1/tasks/user/14",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"tasks",
+						"user",
+						"14"
+					]
+				},
+				"description": "Generated from cURL: curl -X POST http://localhost:8080/api/v1/tasks/user/<user_id> \\\n-H \"Authorization: Bearer <your_jwt_token>\" \\\n-H \"Content-Type: application/json\" \\\n-d '{\n  \"task\": \"Finish Project Documentation\",\n  \"details\": \"Complete the detailed documentation for the API endpoints.\",\n  \"completed\": false,\n  \"taskCreatedAt\": \"2024-11-17\"\n}'"
+			},
+			"response": []
+		},
+		{
+			"name": "get task based on id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJnYXVyYXZKd3QxMCIsImlhdCI6MTczMTg2MDc0MCwiZXhwIjoxNzMxODk2NzQwfQ.Fmae9ohAsofm_1h9hPDRgSglTEltVc8ilOJ511dxK7w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/v1/tasks/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"tasks",
+						"4"
+					]
+				},
+				"description": "Generated from cURL: curl -X GET http://localhost:8080/api/v1/tasks/{taskId}"
+			},
+			"response": []
+		},
+		{
+			"name": "get task based on userId",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJnYXVyYXZKd3QxMCIsImlhdCI6MTczMTg2MDc0MCwiZXhwIjoxNzMxODk2NzQwfQ.Fmae9ohAsofm_1h9hPDRgSglTEltVc8ilOJ511dxK7w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/v1/tasks/user/14",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"tasks",
+						"user",
+						"14"
+					]
+				},
+				"description": "Generated from cURL: curl -X GET http://localhost:8080/api/v1/tasks/{taskId}"
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "1234",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "gaurav",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
