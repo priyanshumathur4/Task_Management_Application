@@ -206,3 +206,10 @@ To test the API endpoints, use the provided [Postman Collection](https://raw.git
 ## Postman Snapshot
 ### POST auth/login with token
 ![Postman Snapshot](https://github.com/user-attachments/assets/56ac41df-a900-4151-ba97-4aeed65a2a08)
+
+## MySQL Database Snapshot -
+### Task 
+![image](https://github.com/sandesh300/Task-Management-System/assets/92014891/1aa8dfb3-2ece-4fef-b8f1-4ae84c543a25)
+
+### User
+![image](https://github.com/sandesh300/Task-Management-System/assets/92014891/204a45c1-f436-4ac5-a6f4-3573b2121a5a)
