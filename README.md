@@ -209,7 +209,7 @@ To test the API endpoints, use the provided [Postman Collection](https://raw.git
 
 ## MySQL Database Snapshot -
 ### Task 
-![image](https://github.com/sandesh300/Task-Management-System/assets/92014891/1aa8dfb3-2ece-4fef-b8f1-4ae84c543a25)
+![image](https://github.com/user-attachments/assets/9fcd2685-8692-4d31-adcb-c593ec10545d)
 
 ### User
 ![image](https://github.com/sandesh300/Task-Management-System/assets/92014891/204a45c1-f436-4ac5-a6f4-3573b2121a5a)
