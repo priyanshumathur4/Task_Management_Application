@@ -204,6 +204,6 @@ To test the API endpoints, use the provided [Postman Collection](https://raw.git
 ```
 
 ---------------------------------------------------------------------------------------
-## PoatMan Snapshot -
-### Post auth/login with token 
-![image](https://github.com/sandesh300/Task-Management-System/assets/92014891/1aa8dfb3-2ece-4fef-b8f1-4ae84c543a25)
+## Postman Snapshot
+### POST auth/login with token 
+![Postman Snapshot](./images/Screenshot%20(17).png)
